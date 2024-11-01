@@ -14,12 +14,10 @@ while(guess!=numtoguess){
 cout<<"your guess: ";
 cin>>guess;
 
-if(guess>numtoguess){
-cout<<"high!"<<endl;
+if(guess>numtoguess || guess<numtoguess){
+cout<<"try again!"<<endl;
 }
-else if(guess<numtoguess){
-cout<<"low!"<<endl;
-}
+
 else{
 cout<<"you are right!!!"<<endl;
 }
