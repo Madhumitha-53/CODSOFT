@@ -1,0 +1,28 @@
+/*NUMBER GUESSING GAME*/
+
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+int main(){
+srand(static_cast<unsigned int>(time(0)));
+int numtoguess=rand()%100+1;
+int guess=0;
+
+cout<<"try to guess a number b/w 1 to 100"<<endl;
+while(guess!=numtoguess){
+cout<<"your guess: ";
+cin>>guess;
+
+if(guess>numtoguess){
+cout<<"high!"<<endl;
+}
+else if(guess<numtoguess){
+cout<<"low!"<<endl;
+}
+else{
+cout<<"you are right!!!"<<endl;
+}
+}
+return 0;
+}
